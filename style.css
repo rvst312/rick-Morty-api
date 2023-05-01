@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cardsGen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card img{
+    width: 175px;
+    height: 175px;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+}

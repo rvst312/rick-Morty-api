@@ -18,10 +18,46 @@ header{
     padding: 10px;
     background-color: #001845;
     border-bottom: .1px #979dac solid;
-
 }
 header h1{
     font-size: 38px;
+    color: hsla(0, 0%, 100%, 0.81);
+}
+.menu-nav.close span{
+    opacity: 1;
+    transform: rotate(45deg) translate(0px,0px);
+    background: #ffff;
+}
+
+.menu-nav.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+  
+.menu-nav.close span:nth-child(3) {
+    display: none;
+}
+.nav-mobile{
+    padding: 5px;
+    display: none;
+    justify-content: end;
+    text-align: end;
+    font-size: 25px;
+    animation: slide-in .3s;
+}
+.show{
+    display: block;
+}
+@keyframes slide-in{
+0%{transform:translateX(150px);}
+25%{transform:translateX(100px)}
+50%{transform:translateX(50px);}
+100%{transform:translateX(0px);}
+}
+.nav-mobile ul{
+    list-style-type: none;
+}
+.nav-mobile li{
+    margin-top: 10px;
 }
 .card{
     box-shadow: #023d7dbd 0px 10px 50px;
@@ -74,10 +110,37 @@ main{
 .gender{
     display: none;
 }
-span{
+.menu-nav{
+    z-index: 200;
     display: flex;
     flex-direction: column;
-    width: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    gap: 8px;
+    cursor: pointer;
+    background: none;
+}
+.menu-nav span{
+    width: 35px;
     height: .5px;
-    background-color: #fff;
+    position: relative;
+    background: #ffff;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+}
+.menu-nav.close span{
+    opacity: 1;
+    transform: rotate(45deg) translate(0px,0px);
+    background: #ffff;
+}
+
+.menu-nav.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+  
+.menu-nav.close span:nth-child(3) {
+    display: none;
 }

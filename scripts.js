@@ -1,6 +1,15 @@
+//Header
+const menu = document.getElementById('menu')
+const nav_desk = document.getElementById('navDesk')
+const nav_mob = document.getElementById('navMob')
+//Mostrar/ocultar
+menu.addEventListener('click', ()=>{
+    menu.classList.toggle('close');
+    nav_mob.classList.toggle('show');
+});
+
 //Dinamic characters 
 const url = `https://rickandmortyapi.com/api/character`
-
 const contenedor = document.querySelector('main')
 
 fetch(url)

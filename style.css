@@ -1,28 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Major Mono Display', monospace;
+    color: #979dac;
+
+}
+body{
+    background-color: #001233;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #001845;
+    border-bottom: .1px #979dac solid;
+
+}
+header h1{
+    font-size: 38px;
+}
+.card{
+    box-shadow: #023d7dbd 0px 10px 50px;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 10px 30px 10px;
 }
 
-.cardsGen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
 .card img{
     width: 175px;
     height: 175px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
+    border: .1px #979dac solid;
+    box-shadow: #023d7dbd 0px 10px 50px;
 }
 .contain{
     display: flex;
     justify-content: space-between;
     margin: .5em;
+    padding-top: 5px;
+}
+.tags{
+    padding-left: 5px;
+    padding-bottom: 8px;
+}
+.tag{
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;   
+}
+.card-bottom{
+    width: 175px;
+    height: 140px;
+    background-color: #001845;
+    margin-top: -10px;
+    border-radius: 0px 0px 15px 15px;
+    border: .1px #979dac solid;
+    box-shadow: #023d7dbd 0px 10px 50px;
 }
 .tittle{
     font-size: 18px;
+    text-align: center;
+}
+.gender{
+    display: none;
+}
+span{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: .5px;
+    background-color: #fff;
 }
